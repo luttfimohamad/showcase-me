@@ -142,7 +142,7 @@ export default function EmailSection() {
               className={`${
                 loading
                   ? 'bg-rose-200 cursor-not-allowed'
-                  : 'bg-rose-500 hover:bg-rose-600'
+                  : 'bg-rose-500 hover:bg-rose-700'
               } text-white font-medium py-2.5 px-5 rounded-lg w-full transition`}
             >
               {loading ? 'Sending...' : 'Send Message'}
