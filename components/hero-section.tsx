@@ -31,7 +31,7 @@ export default function HeroSection() {
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="relative rounded-full overflow-hidden bg-[#3B2F2F] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
             <Image
-              src="/hero-image.png"
+              src="/images/hero-image.png"
               alt="hero image"
               fill
               className="object-cover"
@@ -42,4 +42,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
