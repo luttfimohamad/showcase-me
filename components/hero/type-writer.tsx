@@ -11,7 +11,7 @@ export default function TypeWriter() {
         1000,
         'Web Developer',
         1000,
-        'Front-End Developer',
+        'FE Developer',
         1000,
       ]}
       wrapper="span"
