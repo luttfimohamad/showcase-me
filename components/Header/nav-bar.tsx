@@ -1,24 +1,23 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import Link from 'next/link';
-import NavLink from './nav-link'
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./menu-overlay";
-
+import NavLink from './nav-link';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import MenuOverlay from './menu-overlay';
 
 const navLinks = [
   {
-    title: "About",
-    path: "#about",
+    title: 'About',
+    path: '#about',
   },
   {
-    title: "Projects",
-    path: "#projects",
+    title: 'Projects',
+    path: '#projects',
   },
   {
-    title: "Contact",
-    path: "#contact",
+    title: 'Contact',
+    path: '#contact',
   },
 ];
 
@@ -26,11 +25,11 @@ export default function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
-         <Link
-          href={"/"}
-            className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-rose-500 to-rose-400 bg-clip-text text-transparent"
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100 border-[#33353F] border-b">
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+        <Link
+          href={'/'}
+          className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-rose-500 to-rose-400 bg-clip-text text-transparent"
         >
           Showcase
         </Link>
@@ -61,7 +60,7 @@ export default function NavBar() {
           </ul>
         </div>
       </div>
-       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
-  )
+  );
 }
