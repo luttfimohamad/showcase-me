@@ -27,22 +27,6 @@ export default function EmailSection() {
       message: target.message.value,
     };
 
-    // const JSONdata = JSON.stringify(data);
-    // const endpoint = '/api/send';
-
-    // const options = {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSONdata,
-    // };
-
-    // const response = await fetch(endpoint, options);
-
-    // if (response.status === 200) {
-    //   setEmailSubmitted(true);
-    // }
     try {
       const res = await fetch('/api/send', {
         method: 'POST',
