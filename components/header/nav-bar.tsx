@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import NavLink from './nav-link';
 import MenuOverlay from './menu-overlay';
+import Image from 'next/image';
 
 const navLinks = [
   {
@@ -28,10 +29,15 @@ export default function NavBar() {
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
-          href={'/'}
-          className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-rose-500 to-rose-400 bg-clip-text text-transparent"
+          href="/"
+          className="relative w-[100px] h-[32px] md:w-[155px] md:h-[45px]"
         >
-          Showcase
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            fill
+            className="object-contain"
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
