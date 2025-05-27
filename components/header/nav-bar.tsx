@@ -30,7 +30,7 @@ export default function NavBar() {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href="/"
-          className="relative w-[100px] h-[32px] md:w-[155px] md:h-[45px]"
+          className="relative w-[100px] h-[32px] md:w-[160px] md:h-[48px]"
         >
           <Image
             src="/images/logo.png"
