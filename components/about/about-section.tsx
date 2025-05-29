@@ -41,13 +41,13 @@ const TAB_DATA = [
     title: 'Certifications',
     id: 'certifications',
     content: (
-      <ul className="list-disc pl-4 list-inside">
-        <li>
-          Junior Network Administrator – BNSP (Digital Talent Scholarship 2019)
-        </li>
+      <ul className="list-disc pl-4 list-inside text-justify">
         <li>
           Teaching Factory – Frontend Developer (Telkom DBT Talent Nurturing
           Program 2023)
+        </li>
+        <li>
+          Junior Network Administrator – BNSP (Digital Talent Scholarship 2019)
         </li>
       </ul>
     ),
