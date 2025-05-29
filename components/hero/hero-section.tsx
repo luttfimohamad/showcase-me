@@ -34,7 +34,8 @@ export default function HeroSection() {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="/file/mohamad-lutfi-resume.pdf"
+              download="file/mohamad-lutfi-resume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-amber-500 via-orange-400 to-rose-300 hover:opacity-90 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">

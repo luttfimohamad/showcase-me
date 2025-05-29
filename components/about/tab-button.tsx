@@ -21,7 +21,9 @@ export default function TabButton({
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+      <p
+        className={`mr-3 font-semibold text-base lg:text-xl hover:text-white ${buttonClasses}`}
+      >
         {children}
       </p>
       <motion.div
