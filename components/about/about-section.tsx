@@ -109,7 +109,7 @@ export default function AboutSection() {
             TypeScript, dan Tailwind CSS. Saya antusias dalam menulis clean code
             dan selalu terbuka untuk belajar hal baru.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-wrap gap-2 sm:gap-4 justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange('skills')}
               active={tab === 'skills'}
