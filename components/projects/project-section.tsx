@@ -13,7 +13,7 @@ const projectsData = [
     image: '/images/projects/live-stock-feed.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/luttfimohamad/livestock-feed',
-    previewUrl: 'https://livestock-feed.vercel.app/',
+    previewUrl: 'https://livestock-feed.vercel.app',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projectsData = [
     image: '/images/projects/balap-community.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/luttfimohamad/balap-community',
-    previewUrl: 'https://balap-community.vercel.app/',
+    previewUrl: 'https://balap-community.vercel.app',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const projectsData = [
     image: '/images/projects/lutfi-resume.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/luttfimohamad/lutfi-resume',
-    previewUrl: 'https://lutfi-resume-ten.vercel.app/',
+    previewUrl: 'https://lutfi-resume-ten.vercel.app',
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const projectsData = [
     image: '/images/projects/siabdes-taxion.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/SIABDES/siabdes-web',
-    previewUrl: 'http://siabdestaxion.com/',
+    previewUrl: 'http://siabdestaxion.com',
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const projectsData = [
     image: '/images/projects/apidog.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/luttfimohamad/api-builder',
-    previewUrl: 'https://api-builder-ten.vercel.app/',
+    previewUrl: 'https://api-builder-ten.vercel.app',
   },
   {
     id: 5,
@@ -63,7 +63,7 @@ const projectsData = [
     image: '/images/projects/unfold-news.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/luttfimohamad/unfold-news',
-    previewUrl: 'https://unfold-news-navy.vercel.app/news',
+    previewUrl: 'https://unfold-news-navy.vercel.app',
   },
   {
     id: 6,
@@ -83,7 +83,7 @@ const projectsData = [
     image: '/images/projects/meetups-app.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/luttfimohamad/meetups',
-    previewUrl: 'https://meetups-rose-two.vercel.app/',
+    previewUrl: 'https://meetups-rose-two.vercel.app',
   },
 
   // {
