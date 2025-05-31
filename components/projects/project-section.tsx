@@ -7,58 +7,95 @@ import { motion, useInView } from 'framer-motion';
 const projectsData = [
   {
     id: 1,
-    title: 'React Portfolio Website',
-    description: 'Project 1 description',
-    image: '/images/projects/1.png',
+    title: 'Live Stock Feed',
+    description:
+      'FarmFeed Pro adalah platform penyedia pakan ternak berkualitas tinggi untuk mendukung pertumbuhan, kesehatan, dan produktivitas hewan ternak.',
+    image: '/images/projects/live-stock-feed.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/luttfimohamad/livestock-feed',
+    previewUrl: 'https://livestock-feed.vercel.app/',
   },
   {
     id: 2,
-    title: 'Potography Portfolio Website',
-    description: 'Project 2 description',
-    image: '/images/projects/2.png',
+    title: 'Balap Community',
+    description:
+      'Situs komunitas BALAP yang menampilkan kegiatan warga, gotong royong, olahraga, dan pelatihan untuk membangun kebersamaan di Desa Balamoa.',
+    image: '/images/projects/balap-community.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/luttfimohamad/balap-community',
+    previewUrl: 'https://balap-community.vercel.app/',
   },
   {
     id: 3,
-    title: 'E-commerce Application',
-    description: 'Project 3 description',
-    image: '/images/projects/3.png',
+    title: 'Lutfi Resume',
+    description:
+      'Portofolio modern Mohamad Lutfi yang menampilkan profil, keahlian, pengalaman kerja, dan proyek, dibuat dengan Next.js, TypeScript, dan Tailwind.',
+    image: '/images/projects/lutfi-resume.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/luttfimohamad/lutfi-resume',
+    previewUrl: 'https://lutfi-resume-ten.vercel.app/',
   },
   {
     id: 4,
-    title: 'Food Ordering Application',
-    description: 'Project 4 description',
-    image: '/images/projects/4.png',
-    tag: ['All', 'Mobile'],
-    gitUrl: '/',
-    previewUrl: '/',
+    title: 'SIABDes TAXion',
+    description:
+      'SIABDes TAXion adalah startup berbasis teknologi yang mengembangkan sistem informasi akuntansi berbasis web untuk BUMDes dan BUMDesma.',
+    image: '/images/projects/siabdes-taxion.png',
+    tag: ['All', 'Web'],
+    gitUrl: 'https://github.com/SIABDES/siabdes-web',
+    previewUrl: 'http://siabdestaxion.com/',
   },
   {
     id: 5,
-    title: 'React Firebase Template',
-    description: 'Authentication and CRUD operations',
-    image: '/images/projects/5.png',
+    title: 'APIDOG',
+    description:
+      'Platform API design-first yang memungkinkan perancangan, pengujian, dokumentasi, dan mocking API secara efisien dalam satu antarmuka.',
+    image: '/images/projects/apidog.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/luttfimohamad/api-builder',
+    previewUrl: 'https://api-builder-ten.vercel.app/',
+  },
+  {
+    id: 5,
+    title: 'Unfold News',
+    description:
+      'Unfold News adalah situs berita modern dengan tampilan bersih, menyajikan artikel informatif dan visual menarik secara responsif dan estetis.',
+    image: '/images/projects/unfold-news.png',
+    tag: ['All', 'Web'],
+    gitUrl: 'https://github.com/luttfimohamad/unfold-news',
+    previewUrl: 'https://unfold-news-navy.vercel.app/news',
   },
   {
     id: 6,
-    title: 'Full-stack Roadmap',
-    description: 'Project 5 description',
-    image: '/images/projects/6.png',
+    title: 'The Foodies App',
+    description:
+      'Situs web resep yang menampilkan berbagai hidangan dunia lengkap dengan gambar, deskripsi singkat, dan nama pembuatnya.',
+    image: '/images/projects/the-foodies-app.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/luttfimohamad/the-foodies-app',
+    previewUrl: 'https://the-foodies-app-lyart.vercel.app',
   },
+  {
+    id: 7,
+    title: 'Meetups App',
+    description:
+      'Situs ini menampilkan daftar acara meetup, dibuat dengan React dan Next.js, cocok untuk latihan atau proyek portofolio.',
+    image: '/images/projects/meetups-app.png',
+    tag: ['All', 'Web'],
+    gitUrl: 'https://github.com/luttfimohamad/meetups',
+    previewUrl: 'https://meetups-rose-two.vercel.app/',
+  },
+
+  // {
+  //   id: 9,
+  //   title: 'The Foodies App',
+  //   description:
+  //     'Situs web resep yang menampilkan berbagai hidangan dunia lengkap dengan gambar, deskripsi singkat, dan nama pembuatnya.',
+  //   image: '/images/projects/6.png',
+  //   tag: ['All', 'Web'],
+  //   gitUrl: 'https://github.com/luttfimohamad/the-foodies-app',
+  //   previewUrl: 'https://the-foodies-app-lyart.vercel.app/meals',
+  // },
 ];
 
 export default function ProjectSection() {
@@ -101,26 +138,33 @@ export default function ProjectSection() {
           isSelected={tag === 'Mobile'}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? 'animate' : 'initial'}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
+
+      {filteredProjects.length === 0 ? (
+        <p className="text-white text-center text-lg mt-8">
+          Belum ada proyek untuk kategori ini.
+        </p>
+      ) : (
+        <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+          {filteredProjects.map((project, index) => (
+            <motion.li
+              key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? 'animate' : 'initial'}
+              transition={{ duration: 0.3, delay: index * 0.4 }}
+            >
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                imgUrl={project.image}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+              />
+            </motion.li>
+          ))}
+        </ul>
+      )}
     </section>
   );
 }
