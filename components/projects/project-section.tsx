@@ -85,6 +85,16 @@ const projectsData = [
     gitUrl: 'https://github.com/luttfimohamad/meetups',
     previewUrl: 'https://meetups-rose-two.vercel.app',
   },
+  {
+    id: 8,
+    title: 'Auto Cicil',
+    description:
+      'Situs yang digunakan untuk melakukan perhitungan angsuran pajak. Cocok untuk para kaula muda yang ingin menghitung angsuran.',
+    image: '/images/projects/auto-cicil.png',
+    tag: ['All', 'Web'],
+    gitUrl: 'https://github.com/luttfimohamad/auto-cicil',
+    previewUrl: 'https://auto-cicil.vercel.app/',
+  },
 
   // {
   //   id: 9,
